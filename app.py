@@ -64,9 +64,6 @@ def sentimentAnalyses(tweet):
     highscore = numpy.argmax(scores)
     return highscore
 
-
-
-
 @app.route("/")
 def index():
     return "Welcome to the API of connect-fast"
@@ -124,6 +121,18 @@ def likes(username):
     response = requests.get(url=url, headers=hed)
     data = response.json()
     return data
+
+@app.route("/analyze/profile/<string:username>/")
+def analyzeProfile(username): 
+    try:
+        user = twitter.TwitterUserScraper(username)
+    except ValueError:
+        return "Sorry, {} is not a valid username, tru again".format(username)
+    #we need a check if the username exists or not. 
+    print(user)
+    userDetails = user._get_entity()
+    return userDetails.profileImageUrl
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=9000)
