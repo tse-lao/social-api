@@ -1,7 +1,16 @@
 twitter:
   access_token: 1467810571760328704-ay7r47ge3OYym8iFjBKgu5zfQhvuYQ
   token_secret: ZygUIX4JiGTwnG9zkd47H8M6ld53p0OgXw9fFg0NGaTHx
-  api_key: T0vkQWhhFoE9kUoZckX0wMQpT
-  api_secret: JJoURGr2XUoBhYOkeU8HeA6NuEkliftgsnrPZoQQNSmNWe5pKV
+  api_key: ZBJWbNFPwwqAZEWITzOYvtHy0
+  api_secret: qrsS79QdspHuPf6vnd5jVF8RHHZ1UXBkUlp1gYwy2wXlc0POnK
+  client_id: cV9Gems2dWxnSWs2OTlyUXhEUDQ6MTpjaQ
+  client_secret: qrsS79QdspHuPf6vnd5jVF8RHHZ1UXBkUlp1gYwy2wXlc0POnK
   bearer_token: AAAAAAAAAAAAAAAAAAAAALO5jgEAAAAAzdCq7qQTg58I9U5ybkZYhKUHBsg%3DrDP87dZclDLFpiwEGiGf2uNUVq99Fif1zSblar0TG29RsNlWOe
+  redirect_uri: http://127.0.0.1:9000/oauth/callback
 
+openai: 
+  token: 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
+  
+web3: 
+  alchemy: g6fdwR8PdVuqbsgM5e1QRfqa3dQHfc_t
+  polygon: FTkvVoa7h8vLZv0MRG5TyiCIK_gKihr1

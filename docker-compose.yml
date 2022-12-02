@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pyapisocials:
+    image: pyapisocials
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 9000:9000
