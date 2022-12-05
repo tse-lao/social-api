@@ -21,7 +21,6 @@ from scipy.special import softmax
 import openai
 import os
 import base64
-import routes.ethereum
 
 
 app = Flask(__name__)

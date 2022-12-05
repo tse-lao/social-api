@@ -1,7 +1,6 @@
 from web3 import Web3
 import yaml 
-import requests
-from setup import app
+from main import app
 
 with open('config.yaml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
