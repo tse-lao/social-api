@@ -1,8 +1,6 @@
 import base64
 import hashlib
-import json
 import os
-import random
 import re
 
 import numpy
@@ -14,14 +12,13 @@ import snscrape.modules.twitter as twitterScrape
 import tweepy
 import tweets
 import yaml
-from flask import Flask, redirect, render_template, request, session, url_for
+from flask import Flask, redirect, request, session
 from flask_cors import CORS
-from requests.auth import AuthBase, HTTPBasicAuth
-from requests_oauthlib import OAuth2Session, TokenUpdated
-from scipy.special import softmax
+from requests_oauthlib import OAuth2Session
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 app = Flask(__name__)
+app.secret_key = os.urandom(50)
 CORS(app)
 
 with open('config.yaml') as f:
@@ -34,11 +31,9 @@ baseurl = "https://api.twitter.com/"
 
 
 query = "python"
-limit = 100
+limit = 1000
 
 tweetje = "@legender, lets get bullish on matic @ home https://testingisd.com"
-
-
 
 def getId(user):
     data = username(user)
@@ -239,3 +234,7 @@ def nfts(address):
     nft.append(get.json())
     nft.append(polyNFT.json())
     return nft
+
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=9000)

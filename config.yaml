@@ -8,9 +8,9 @@
   bearer_token: AAAAAAAAAAAAAAAAAAAAALO5jgEAAAAAzdCq7qQTg58I9U5ybkZYhKUHBsg%3DrDP87dZclDLFpiwEGiGf2uNUVq99Fif1zSblar0TG29RsNlWOe
   redirect_uri: http://127.0.0.1:9000/oauth/callback
 
-openai: 
+ openai:
   token: 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
   
-web3: 
+ web3: 
   alchemy: g6fdwR8PdVuqbsgM5e1QRfqa3dQHfc_t
   polygon: FTkvVoa7h8vLZv0MRG5TyiCIK_gKihr1
